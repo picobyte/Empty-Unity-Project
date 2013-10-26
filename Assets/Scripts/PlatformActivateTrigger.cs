@@ -10,4 +10,10 @@ public class PlatformActivateTrigger : MonoBehaviour
 		var mover = target.GetComponent<PlatformMover>();
 		mover.isMoving = true;
 	}
+	
+	void OnTriggerExit(Collider other) 
+	{
+		var mover = target.GetComponent<PlatformMover>();
+		mover.isMoving = false;
+	}
 }
