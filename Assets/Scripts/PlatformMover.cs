@@ -5,6 +5,8 @@ public class PlatformMover : Activatable {
 
     public float blockspeed = 7;
     public float waitTime = 2;
+    public Vector3 endPos;
+
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +17,7 @@ public class PlatformMover : Activatable {
 	void Update () {
         if(isActive)
         {
-        
+        transform.position = Vector3.Lerp(transform.position, endPos, Time.deltaTime*blockspeed);
         }
 	}
     

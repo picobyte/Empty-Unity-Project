@@ -848,6 +848,7 @@ MonoBehaviour:
   neededItemType: 1
   blockspeed: 7
   waitTime: 2
+  endPos: {x: 118.1875, y: -220.684204, z: 0}
 --- !u!1 &500428939
 GameObject:
   m_ObjectHideFlags: 0
