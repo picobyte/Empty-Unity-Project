@@ -7,15 +7,17 @@ public class PlatformMover : Activatable {
     public float waitTime = 2;
     public Vector3 endPos;
 
-
-	// Use this for initialization
-	void Start () {
+	public bool isMoving { private get; set; }
 	
+	// Use this for initialization
+	void Awake () 
+	{
+		isMoving = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if(isActive)
+        if(isActive && isMoving)
         {
         transform.position = Vector3.Lerp(transform.position, endPos, Time.deltaTime*blockspeed);
         }
