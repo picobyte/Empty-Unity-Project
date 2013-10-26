@@ -480,7 +480,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 7a744fefa8fa3b246a3edc21da337d46, type: 2}
+  - {fileID: 2100000, guid: b4ab1bd1a8b494fce8c3ac438d7ab4c5, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1848,6 +1848,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .707106769
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5adc730ee92c53847b1e20a2841f7a77, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b4ab1bd1a8b494fce8c3ac438d7ab4c5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5adc730ee92c53847b1e20a2841f7a77, type: 2}
   m_RootGameObject: {fileID: 840087648}
