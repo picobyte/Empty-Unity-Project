@@ -3,16 +3,24 @@ using System.Collections;
 
 public class PlayerItem : MonoBehaviour
 {
-	private GameObject currentItem;
+	private static Item currentItem;
+    public static ItemType type
+    {
+        get
+        {
+            return currentItem ? currentItem.type : ItemType.None;
+        }
+    }
 
-	void OnRecieveItem(GameObject item)
+	public void OnReceiveItem(Item item)
 	{
 		if(currentItem)
 		{
-			Destroy(currentItem);
+			currentItem.transform.parent = null;
+            currentItem.Return();
 		}
 		currentItem = item;
 		currentItem.transform.parent = transform;
-		currentItem.transform.localPosition = new Vector3(0,0,0);
+		currentItem.transform.localPosition = Vector3.zero;
 	}
 }
