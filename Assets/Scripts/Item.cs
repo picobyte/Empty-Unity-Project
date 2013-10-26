@@ -12,17 +12,24 @@ public class Item : MonoBehaviour
 
 	private Vector3 originalPosition;
 	
+	public bool isBound { private get; set; }
+	
 	void Awake()
 	{
+		isBound = false;
 		originalPosition = transform.position;
 	}
 
 	void OnTriggerEnter(Collider other)
 	{
+		if(isBound)
+			return;
+		
 		var pitem = other.GetComponent<PlayerItem>();
 		if(pitem)
         {
 			pitem.OnReceiveItem(this);
+			isBound = true;
 		}
 	}
     
@@ -30,6 +37,7 @@ public class Item : MonoBehaviour
     {
         transform.position = originalPosition;
         StartCoroutine(Grow());
+		isBound = false;
     }
     
     IEnumerator Grow()

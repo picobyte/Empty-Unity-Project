@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 _movement;
     public Vector3 movement{ get{ return _movement; } }
     public Vector3 input{ private set; get; }
+	
+	public Vector3 respawnPoint = Vector3.zero;
     
     public float speed = 10;
     public float gravity = 10;

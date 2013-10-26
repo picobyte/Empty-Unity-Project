@@ -16,6 +16,7 @@ public class PlayerItem : MonoBehaviour
 	{
 		if(currentItem)
 		{
+			Debug.Log("Returning current item.");
 			currentItem.transform.parent = null;
             currentItem.Return();
             Activatable.OnEventForAll(currentItem.type, false);
@@ -23,6 +24,7 @@ public class PlayerItem : MonoBehaviour
 		currentItem = item;
         if(item)
         {
+			Debug.Log("Setting new item");
             currentItem.transform.parent = transform;
             currentItem.transform.localPosition = Vector3.zero;
             

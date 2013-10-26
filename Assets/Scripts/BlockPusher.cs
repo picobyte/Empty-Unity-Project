@@ -15,7 +15,7 @@ public class BlockPusher : MonoBehaviour
             return;
 		}	
 		var block = hit.gameObject.GetComponent<PushableBlock>();
-		if (!block.isActive) {
+		if (!block || !block.isActive) {
 			return;
 		}
 
