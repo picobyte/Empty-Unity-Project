@@ -9,6 +9,9 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 10;
     public float gravity = 10;
     public float jumpPower = 10;
+    public float airSpeed = 5;
+    
+    private float maxAirSpeed;
     
 
 	void Awake()
@@ -26,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
             if(Input.GetButtonDown("Jump"))
             {
                 movement.y = jumpPower;
+                maxAirSpeed = Mathf.Abs(movement.x);
             }
             else
             {
@@ -34,6 +38,8 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
+            movement += input * airSpeed * Time.deltaTime;
+            movement.x = Mathf.Clamp(movement.x, -maxAirSpeed, maxAirSpeed);
             movement.y -= gravity * Time.deltaTime;
         }
         
