@@ -242,6 +242,7 @@ GameObject:
   - 65: {fileID: 115991574}
   - 23: {fileID: 115991573}
   - 114: {fileID: 115991572}
+  - 114: {fileID: 115991577}
   m_Layer: 0
   m_Name: GreenPlatform
   m_TagString: Untagged
@@ -285,7 +286,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 115991571}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -308,6 +309,18 @@ Transform:
   m_LocalScale: {x: 7.28047037, y: 2.63545585, z: 1.17478716}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &115991577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 115991571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b50ebdd5001c84a5a8d31f27f903298e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neededItemType: 3
 --- !u!1 &116595317
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,7 +860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neededItemType: 1
-  blockspeed: 1
+  blockspeed: 3
   waitTime: 2
   endPos: {x: 118.1875, y: -220.684204, z: 0}
 --- !u!1 &500428939
@@ -1428,6 +1441,7 @@ GameObject:
   - 65: {fileID: 691661701}
   - 23: {fileID: 691661700}
   - 114: {fileID: 691661699}
+  - 114: {fileID: 691661704}
   m_Layer: 0
   m_Name: GreenPlatform
   m_TagString: Untagged
@@ -1471,7 +1485,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 691661698}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1494,6 +1508,18 @@ Transform:
   m_LocalScale: {x: 24.4307442, y: 1.14804435, z: 1.17478716}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &691661704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 691661698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b50ebdd5001c84a5a8d31f27f903298e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neededItemType: 3
 --- !u!1 &735831042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1789,7 +1815,7 @@ Transform:
   m_PrefabInternal: {fileID: 1821209930}
   m_GameObject: {fileID: 842340376}
   m_LocalRotation: {x: -.707106888, y: 0, z: 0, w: .707106769}
-  m_LocalPosition: {x: 47.3838387, y: 46.046463, z: -63.25037}
+  m_LocalPosition: {x: 36.3156128, y: 61.7404327, z: -5.61820343e-06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1883,6 +1909,7 @@ GameObject:
   - 65: {fileID: 862656271}
   - 23: {fileID: 862656270}
   - 114: {fileID: 862656269}
+  - 114: {fileID: 862656274}
   m_Layer: 0
   m_Name: GreenPlatform
   m_TagString: Untagged
@@ -1926,7 +1953,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 862656268}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1949,6 +1976,18 @@ Transform:
   m_LocalScale: {x: 24.4307442, y: .880441725, z: 1.17478716}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &862656274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 862656268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b50ebdd5001c84a5a8d31f27f903298e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neededItemType: 3
 --- !u!1 &888406676
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,6 +2139,7 @@ GameObject:
   - 65: {fileID: 921515409}
   - 23: {fileID: 921515408}
   - 114: {fileID: 921515407}
+  - 114: {fileID: 921515412}
   m_Layer: 0
   m_Name: GreenPlatform
   m_TagString: Untagged
@@ -2143,7 +2183,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 921515406}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -2166,6 +2206,18 @@ Transform:
   m_LocalScale: {x: 24.4307442, y: 1.14804435, z: 1.17478716}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &921515412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 921515406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b50ebdd5001c84a5a8d31f27f903298e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neededItemType: 3
 --- !u!1 &921680792
 GameObject:
   m_ObjectHideFlags: 0
@@ -4106,11 +4158,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400010, guid: 3eb2730e2ada927438c0daa41498bcc6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 100.532547
+      value: 44.1047516
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 3eb2730e2ada927438c0daa41498bcc6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -76.363678
+      value: 62.9070358
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 3eb2730e2ada927438c0daa41498bcc6, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4460,6 +4512,7 @@ GameObject:
   - 65: {fileID: 1500970395}
   - 23: {fileID: 1500970394}
   - 114: {fileID: 1500970393}
+  - 114: {fileID: 1500970398}
   m_Layer: 0
   m_Name: GreenPlatform
   m_TagString: Untagged
@@ -4503,7 +4556,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1500970392}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -4526,6 +4579,18 @@ Transform:
   m_LocalScale: {x: 8.28904343, y: 1.14804435, z: 1.17478716}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1500970398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1500970392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b50ebdd5001c84a5a8d31f27f903298e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neededItemType: 3
 --- !u!1001 &1523040875
 Prefab:
   m_ObjectHideFlags: 0
@@ -5008,6 +5073,7 @@ GameObject:
   - 65: {fileID: 1788405555}
   - 23: {fileID: 1788405554}
   - 114: {fileID: 1788405553}
+  - 114: {fileID: 1788405558}
   m_Layer: 0
   m_Name: GreenPlatform
   m_TagString: Untagged
@@ -5051,7 +5117,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1788405552}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -5074,6 +5140,18 @@ Transform:
   m_LocalScale: {x: 3.99937677, y: 4.65053129, z: 1.17478716}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1788405558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1788405552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b50ebdd5001c84a5a8d31f27f903298e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neededItemType: 3
 --- !u!1001 &1821209930
 Prefab:
   m_ObjectHideFlags: 0
@@ -5083,15 +5161,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 5426dbafaa7a350428bf3825b4695301, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 47.3838387
+      value: 36.3156128
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5426dbafaa7a350428bf3825b4695301, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 46.046463
+      value: 61.7404327
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5426dbafaa7a350428bf3825b4695301, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -63.25037
+      value: -5.61820343e-06
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5426dbafaa7a350428bf3825b4695301, type: 2}
       propertyPath: m_LocalRotation.x
@@ -5323,6 +5401,7 @@ GameObject:
   - 65: {fileID: 1906757264}
   - 23: {fileID: 1906757263}
   - 114: {fileID: 1906757262}
+  - 114: {fileID: 1906757267}
   m_Layer: 0
   m_Name: GreenPlatform
   m_TagString: Untagged
@@ -5366,7 +5445,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1906757261}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -5389,6 +5468,18 @@ Transform:
   m_LocalScale: {x: 24.4307442, y: 1.14804435, z: 1.17478716}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1906757267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1906757261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b50ebdd5001c84a5a8d31f27f903298e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neededItemType: 3
 --- !u!1001 &1951190504
 Prefab:
   m_ObjectHideFlags: 0
@@ -5857,7 +5948,7 @@ Transform:
   m_PrefabInternal: {fileID: 1383094233}
   m_GameObject: {fileID: 2119736879}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100.532547, y: -76.363678, z: 0}
+  m_LocalPosition: {x: 44.1047516, y: 62.9070358, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 888406677}
@@ -5890,8 +5981,7 @@ MonoBehaviour:
   speed: 10
   gravity: 10
   jumpPower: 8
-  airSpeedFactor: 5
-  minAirSpeed: 5
+  airSpeed: 10
 --- !u!143 &2119736883
 CharacterController:
   m_ObjectHideFlags: 0
