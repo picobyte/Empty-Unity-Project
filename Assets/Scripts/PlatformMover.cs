@@ -18,4 +18,9 @@ public class PlatformMover : Activatable {
         
         }
 	}
+    
+    protected override void OnStatusChange(bool active)
+    {
+    
+    }
 }
