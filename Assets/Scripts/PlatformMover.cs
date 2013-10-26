@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlatformMover : MonoBehaviour {
+public class PlatformMover : Activatable {
 
     public float blockspeed = 7;
     public float waitTime = 2;
@@ -13,6 +13,9 @@ public class PlatformMover : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        if(isActive)
+        {
+        
+        }
 	}
 }

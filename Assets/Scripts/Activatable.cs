@@ -11,7 +11,7 @@ public abstract class Activatable : MonoBehaviour
     
     void Awake()
     {
-        if(listeners[neededItemType] == null)
+        if(!listeners.ContainsKey(neededItemType))
         {
             listeners[neededItemType] = new HashSet<Activatable>();
         }
@@ -28,7 +28,7 @@ public abstract class Activatable : MonoBehaviour
     
     public static void OnEventForAll(ItemType type, bool activate)
     {
-        if(listeners[type] == null) return;
+        if(!listeners.ContainsKey(type)) return;
         foreach(var a in listeners[type])
         {
             a.OnEvent(activate);
@@ -40,8 +40,8 @@ public abstract class Activatable : MonoBehaviour
         renderer.material.color = activate ? originalColor : Color.black;
     }
     
-    protected bool isActive()
+    protected bool isActive
     {
-        return neededItemType == PlayerItem.type;
+        get{ return neededItemType == PlayerItem.type; }
     }
 }

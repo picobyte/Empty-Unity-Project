@@ -4,7 +4,9 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour
 {
     private CharacterController controller;
-    private Vector3 movement;
+    private Vector3 _movement;
+    public Vector3 movement{ get{ return _movement; } }
+    public Vector3 input{ private set; get; }
     
     public float speed = 10;
     public float gravity = 10;
@@ -12,7 +14,6 @@ public class PlayerMovement : MonoBehaviour
     public float airSpeed = 5;
     
     private float maxAirSpeed;
-    
 
 	void Awake()
     {
@@ -21,28 +22,28 @@ public class PlayerMovement : MonoBehaviour
 	
 	void Update()
     {
-        var input = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+        input = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
         
         if(controller.isGrounded)
         {
-            movement = input * speed;
+            _movement = input * speed;
             if(Input.GetButtonDown("Jump"))
             {
-                movement.y = jumpPower;
-                maxAirSpeed = Mathf.Abs(movement.x);
+                _movement.y = jumpPower;
+                maxAirSpeed = Mathf.Abs(_movement.x);
             }
             else
             {
-                movement.y = -1;
+                _movement.y = -1;
             }
         }
         else
         {
-            movement += input * airSpeed * Time.deltaTime;
-            movement.x = Mathf.Clamp(movement.x, -maxAirSpeed, maxAirSpeed);
-            movement.y -= gravity * Time.deltaTime;
+            _movement += input * airSpeed * Time.deltaTime;
+            _movement.x = Mathf.Clamp(_movement.x, -maxAirSpeed, maxAirSpeed);
+            _movement.y -= gravity * Time.deltaTime;
         }
         
-        controller.Move(movement * Time.deltaTime);
+        controller.Move(_movement * Time.deltaTime);
 	}
 }

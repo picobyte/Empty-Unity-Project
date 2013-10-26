@@ -18,9 +18,15 @@ public class PlayerItem : MonoBehaviour
 		{
 			currentItem.transform.parent = null;
             currentItem.Return();
+            Activatable.OnEventForAll(currentItem.type, false);
 		}
 		currentItem = item;
-		currentItem.transform.parent = transform;
-		currentItem.transform.localPosition = Vector3.zero;
+        if(item)
+        {
+            currentItem.transform.parent = transform;
+            currentItem.transform.localPosition = Vector3.zero;
+            
+            Activatable.OnEventForAll(item.type, true);
+        }
 	}
 }
