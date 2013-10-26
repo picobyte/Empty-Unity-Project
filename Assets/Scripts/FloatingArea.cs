@@ -6,7 +6,8 @@ public class FloatingArea : Activatable
 
 	private float previousGravity;
 
-	void OnTriggerEnter(Collider other) {
+	void OnTriggerEnter(Collider other)
+	{
         if(isActive)
         {
 			var movement = other.GetComponent<PlayerMovement>();
@@ -17,16 +18,18 @@ public class FloatingArea : Activatable
 			movement.gravity = -5;
         }
 	}
-	
+
 	void OnTriggerExit(Collider other)
 	{
-		var movement = other.GetComponent<PlayerMovement>();
-		if(!movement) {
-				return;
+		if(isActive) {
+			var movement = other.GetComponent<PlayerMovement>();
+			if(!movement) {
+					return;
+			}
+			movement.gravity = previousGravity;
 		}
-		movement.gravity = previousGravity;
 	}
-    
+
     protected override void OnStatusChange(bool active)
     {
 		//TODO: activate particle system here
