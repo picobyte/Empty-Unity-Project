@@ -1,5 +1,15 @@
-Empty Unity Project
-===================
+The Ghost and the Colours
+=========================
 
-An empty Unity Project.
-Fork it to start using Git for Unity3D Projects.
+You play as the ghost, trapped in a dark and sallow place.
+But you may escape by finding powerful pieces of colour, that
+can make parts of the world become alive again.
+
+Notice how the music changes with the colour you hold.
+
+Controls
+--------
+
+WASD / Arrow Keys: Move
+
+Space / W / Up: Jump
