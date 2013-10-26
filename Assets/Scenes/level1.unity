@@ -257,9 +257,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 115991571}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5c193b99ba240741ba85923c49c03f5, type: 3}
+  m_Script: {fileID: 11500000, guid: b50ebdd5001c84a5a8d31f27f903298e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  neededItemType: 3
 --- !u!23 &115991573
 Renderer:
   m_ObjectHideFlags: 0
@@ -285,7 +286,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 115991571}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1504,9 +1505,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 691661698}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5c193b99ba240741ba85923c49c03f5, type: 3}
+  m_Script: {fileID: 11500000, guid: b50ebdd5001c84a5a8d31f27f903298e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  neededItemType: 3
 --- !u!23 &691661700
 Renderer:
   m_ObjectHideFlags: 0
@@ -1532,7 +1534,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 691661698}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1959,9 +1961,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 862656268}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5c193b99ba240741ba85923c49c03f5, type: 3}
+  m_Script: {fileID: 11500000, guid: b50ebdd5001c84a5a8d31f27f903298e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  neededItemType: 3
 --- !u!23 &862656270
 Renderer:
   m_ObjectHideFlags: 0
@@ -1987,7 +1990,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 862656268}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -2176,9 +2179,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 921515406}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5c193b99ba240741ba85923c49c03f5, type: 3}
+  m_Script: {fileID: 11500000, guid: b50ebdd5001c84a5a8d31f27f903298e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  neededItemType: 3
 --- !u!23 &921515408
 Renderer:
   m_ObjectHideFlags: 0
@@ -2204,7 +2208,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 921515406}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -5646,9 +5650,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1500970392}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5c193b99ba240741ba85923c49c03f5, type: 3}
+  m_Script: {fileID: 11500000, guid: b50ebdd5001c84a5a8d31f27f903298e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  neededItemType: 3
 --- !u!23 &1500970394
 Renderer:
   m_ObjectHideFlags: 0
@@ -5674,7 +5679,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1500970392}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -6194,9 +6199,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1788405552}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5c193b99ba240741ba85923c49c03f5, type: 3}
+  m_Script: {fileID: 11500000, guid: b50ebdd5001c84a5a8d31f27f903298e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  neededItemType: 3
 --- !u!23 &1788405554
 Renderer:
   m_ObjectHideFlags: 0
@@ -6222,7 +6228,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1788405552}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -6509,9 +6515,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1906757261}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5c193b99ba240741ba85923c49c03f5, type: 3}
+  m_Script: {fileID: 11500000, guid: b50ebdd5001c84a5a8d31f27f903298e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  neededItemType: 3
 --- !u!23 &1906757263
 Renderer:
   m_ObjectHideFlags: 0
@@ -6537,7 +6544,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1906757261}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -7049,8 +7056,7 @@ MonoBehaviour:
   speed: 10
   gravity: 10
   jumpPower: 8
-  airSpeedFactor: 5
-  minAirSpeed: 5
+  airSpeed: 10
 --- !u!143 &2119736883
 CharacterController:
   m_ObjectHideFlags: 0
