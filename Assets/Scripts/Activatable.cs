@@ -38,6 +38,12 @@ public abstract class Activatable : MonoBehaviour
     private void OnEvent(bool activate)
     {
         renderer.material.color = activate ? originalColor : Color.black;
+        OnStatusChange(activate);
+    }
+    
+    protected virtual void OnStatusChange(bool active)
+    {
+    
     }
     
     protected bool isActive
