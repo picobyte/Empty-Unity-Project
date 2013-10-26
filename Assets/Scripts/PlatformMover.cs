@@ -19,7 +19,7 @@ public class PlatformMover : Activatable {
 	void Update () {
         if(isActive && isMoving)
         {
-        transform.position = Vector3.Lerp(transform.position, endPos, Time.deltaTime*blockspeed);
+        transform.position = Vector3.MoveTowards(transform.position, endPos, Time.deltaTime*blockspeed);
         }
 	}
     
