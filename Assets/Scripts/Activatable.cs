@@ -9,7 +9,7 @@ public abstract class Activatable : MonoBehaviour
     private ItemType neededItemType;
     private Color originalColor;
     
-    void Awake()
+    protected void Awake()
     {
         if(!listeners.ContainsKey(neededItemType))
         {
@@ -46,7 +46,7 @@ public abstract class Activatable : MonoBehaviour
     
     }
     
-    protected bool isActive
+    public bool isActive
     {
         get{ return neededItemType == PlayerItem.type; }
     }

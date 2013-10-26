@@ -9,9 +9,9 @@ public class PlatformMover : Activatable {
 
 	public bool isMoving { private get; set; }
 	
-	// Use this for initialization
-	void Awake () 
+	void Awake() 
 	{
+		base.Awake();
 		isMoving = false;
 	}
 	
@@ -19,7 +19,8 @@ public class PlatformMover : Activatable {
 	void Update () {
         if(isActive && isMoving)
         {
-        transform.position = Vector3.MoveTowards(transform.position, endPos, Time.deltaTime*blockspeed);
+			transform.position = Vector3.MoveTowards(
+				transform.position, endPos, Time.deltaTime*blockspeed);
         }
 	}
     
