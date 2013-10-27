@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public bool canControl = true;
+
     private CharacterController controller;
     private Vector3 _movement;
     public Vector3 movement{ get{ return _movement; } }
@@ -25,7 +27,14 @@ public class PlayerMovement : MonoBehaviour
 	
 	void Update()
     {
-        input = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+        if(canControl)
+        {
+            input = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+        }
+        else
+        {
+            input = Vector3.zero;
+        }
         
         if(controller.isGrounded)
         {
