@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         if(controller.isGrounded)
         {
             _movement = input * speed;
-            if(Input.GetButtonDown("Jump"))
+            if(canControl && Input.GetButtonDown("Jump"))
             {
                 _movement.y = jumpPower;
                 maxAirSpeed = Mathf.Max(minAirSpeed, Mathf.Abs(_movement.x));
