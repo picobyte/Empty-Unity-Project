@@ -2792,6 +2792,7 @@ MonoBehaviour:
   blockspeed: 20
   waitTime: 2
   endPos: {x: 120, y: -220, z: 0}
+  returnToStart: 1
   playerOnIt: 0
 --- !u!1 &493376154
 GameObject:
@@ -4070,7 +4071,6 @@ MonoBehaviour:
   purpleMusic: {fileID: 8300000, guid: 5570f044bc0a38947ad05dd36aa48c72, type: 3}
   yellowMusic: {fileID: 8300000, guid: fc8a6834d45456545abcecdd96969f27, type: 3}
   blueMusic: {fileID: 8300000, guid: 0a69cb0f3a0d5e84e94843c23ebb22d9, type: 3}
-  shouldPlay: 1
 --- !u!1001 &813169761
 Prefab:
   m_ObjectHideFlags: 0
