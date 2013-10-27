@@ -6,8 +6,7 @@ using System.Collections;
 public class BowRenderer : MonoBehaviour
 {
     private LineRenderer line;
-    [SerializeField]
-    private Transform target;
+    public Transform target;
     public float y = 1;
     
 	void Awake()

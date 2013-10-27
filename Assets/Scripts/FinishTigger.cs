@@ -7,6 +7,8 @@ public class FinishTigger : MonoBehaviour
     private string nextLevel;
     [SerializeField]
     private Texture2D fadeTexture;
+    [SerializeField]
+    private BowRenderer rainbow;
     private Transform player;
     
     private float animationTime = 0; //from 0 to 1
@@ -20,6 +22,7 @@ public class FinishTigger : MonoBehaviour
             movement.canControl = false;
             movement.gravity = -1;
             player = movement.transform;
+            rainbow.GetComponent<LineRenderer>().enabled = true;
         }
 	}
     
@@ -32,6 +35,9 @@ public class FinishTigger : MonoBehaviour
             player.position = pos;
             
             animationTime += Time.deltaTime * 0.5f;
+            
+            rainbow.target.localPosition = Vector3.up * animationTime * 100;
+            
             if(animationTime > 1)
             {
                 Application.LoadLevel(nextLevel);
