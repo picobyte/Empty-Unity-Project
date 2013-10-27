@@ -56,6 +56,9 @@ public class PlayerMovement : MonoBehaviour
             _movement.y -= gravity * Time.deltaTime;
         }
         
+        var previousPosition = transform.position;
         controller.Move(_movement * Time.deltaTime);
+        
+        _movement = (transform.position - previousPosition) / Time.deltaTime;
 	}
 }
