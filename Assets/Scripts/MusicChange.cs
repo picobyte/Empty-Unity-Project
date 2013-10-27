@@ -59,10 +59,9 @@ public class MusicChange : MonoBehaviour
     
     private void ChangeMusic(AudioClip music)
     {
-        var time = primary.timeSamples;
         secondary.clip = music;
-        secondary.timeSamples = time;
         secondary.Play();
+        secondary.timeSamples = primary.timeSamples;
         
         //switch primary and secondary
         var buf = primary;
