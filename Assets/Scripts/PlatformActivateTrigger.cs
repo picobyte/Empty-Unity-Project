@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class PlatformActivateTrigger : MonoBehaviour
-{;
+{
         public GameObject target;
         public bool holdPlayer = true;
         
