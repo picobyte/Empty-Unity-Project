@@ -467,6 +467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neededItemType: 2
+  particleSystem: {fileID: 1455623567}
 --- !u!65 &152992854
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1166,6 +1167,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 97b98cdb0d87410419390043c5157601, type: 2}
+      propertyPath: particleSystem
+      value: 
+      objectReference: {fileID: 1455623567}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 97b98cdb0d87410419390043c5157601, type: 2}
   m_RootGameObject: {fileID: 152992852}
@@ -10065,6 +10070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neededItemType: 2
+  particleSystem: {fileID: 2083701301}
 --- !u!65 &1833856767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10331,6 +10337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neededItemType: 2
+  particleSystem: {fileID: 602003671}
 --- !u!65 &1912185645
 BoxCollider:
   m_ObjectHideFlags: 0
