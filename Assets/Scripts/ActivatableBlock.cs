@@ -14,7 +14,6 @@ public abstract class ActivatableBlock : Activatable
 	
 	override protected void OnEvent(bool activate)
 	{
-		Debug.Log("Hallo");
 		renderer.material.color = activate ? originalColor : Color.black;
 		base.OnEvent(activate);
 	}

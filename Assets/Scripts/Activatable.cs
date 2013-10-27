@@ -33,13 +33,12 @@ public abstract class Activatable : MonoBehaviour
     
     protected virtual void OnEvent(bool activate)
     {
-        Debug.Log("Welt!");
 		OnStatusChange(activate);
     }
     
     protected virtual void OnStatusChange(bool active)
     {
-    
+	
     }
     
     public bool isActive
