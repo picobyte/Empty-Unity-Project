@@ -4,6 +4,7 @@ using System.Collections;
 public class PlatformActivateTrigger : MonoBehaviour 
 {
 	public GameObject target;
+	public bool holdPlayer = true;
 	
 	void OnTriggerEnter(Collider other) 
 	{
@@ -12,7 +13,9 @@ public class PlatformActivateTrigger : MonoBehaviour
 		{
 			Debug.Log("Ghost entered lift platform.");
 			mover.isMoving = true;
-			other.transform.parent = target.transform;
+			if(holdPlayer) {
+				other.transform.parent = target.transform;
+			}
 		}
 	}
 	
@@ -20,9 +23,11 @@ public class PlatformActivateTrigger : MonoBehaviour
 	{
 		Debug.Log("Ghost left lift platform.");
 		var mover = target.GetComponent<PlatformMover>();
-		if(mover) {
-			mover.isMoving = false;
+		if(holdPlayer) {
+			if(mover) {
+				mover.isMoving = false;
+			}
+			other.transform.parent = null;
 		}
-		other.transform.parent = null;
 	}
 }
