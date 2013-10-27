@@ -2792,6 +2792,7 @@ MonoBehaviour:
   blockspeed: 20
   waitTime: 2
   endPos: {x: 120, y: -220, z: 0}
+  returnToStart: 1
   playerOnIt: 0
 --- !u!1 &493376154
 GameObject:
