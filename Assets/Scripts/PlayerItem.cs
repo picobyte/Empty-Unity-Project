@@ -25,6 +25,8 @@ public class PlayerItem : MonoBehaviour
         if(item)
         {
 			Debug.Log("Setting new item");
+            GetComponent<PlayerMovement>().respawnPoint = currentItem.transform.position + Vector3.up;
+            
             currentItem.transform.parent = transform;
             currentItem.transform.localPosition = Vector3.zero;
             
