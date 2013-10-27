@@ -5180,7 +5180,7 @@ Transform:
   m_PrefabInternal: {fileID: 1657747261}
   m_GameObject: {fileID: 670012677}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 262.294342, y: 25.2226276, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 864885430}
@@ -6885,7 +6885,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: eb675aa62b8b4a94fb049b05ae0412a1, type: 2}
       propertyPath: nextLevel
-      value: finished
+      value: ending
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: eb675aa62b8b4a94fb049b05ae0412a1, type: 2}
       propertyPath: m_LocalPosition.y
@@ -13088,7 +13088,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2434cf4a6d9f20244bfde3a853122faf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: finished
+  nextLevel: ending
   fadeTexture: {fileID: 2800000, guid: 5236ef9e15fdedf4a8391a49b89b93d6, type: 3}
   rainbow: {fileID: 190501790}
 --- !u!65 &1544108884
@@ -13974,11 +13974,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400010, guid: 3eb2730e2ada927438c0daa41498bcc6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 262.294342
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 3eb2730e2ada927438c0daa41498bcc6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 25.2226276
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 3eb2730e2ada927438c0daa41498bcc6, type: 2}
       propertyPath: m_LocalPosition.z
