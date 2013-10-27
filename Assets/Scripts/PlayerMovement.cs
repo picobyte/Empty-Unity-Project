@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float gravity = 10;
     public float jumpPower = 10;
     public float airSpeed = 5;
+	public float minAirSpeed = 3;
     
     private float maxAirSpeed;
 
@@ -32,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
             if(Input.GetButtonDown("Jump"))
             {
                 _movement.y = jumpPower;
-                maxAirSpeed = Mathf.Abs(_movement.x);
+                maxAirSpeed = Mathf.Max(minAirSpeed, Mathf.Abs(_movement.x));
             }
             else
             {
