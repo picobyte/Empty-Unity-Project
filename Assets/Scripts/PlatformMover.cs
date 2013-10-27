@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlatformMover : Activatable {
-
+public class PlatformMover : ActivatableBlock
+{
     public float blockspeed = 7;
     public float waitTime = 2;
     public Vector3 endPos;

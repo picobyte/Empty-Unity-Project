@@ -4,6 +4,7 @@ using System.Collections;
 public class FloatingArea : Activatable 
 {
 
+	public GameObject particleSystem;
 	private float previousGravity;
 
 	void OnTriggerEnter(Collider other)
@@ -32,6 +33,13 @@ public class FloatingArea : Activatable
 
     protected override void OnStatusChange(bool active)
     {
-		//TODO: activate particle system here
+		var ps = particleSystem.GetComponent<ParticleSystem>();
+		if(ps) {
+			if(active) {
+				ps.Play();
+			} else {
+				ps.Stop();
+			}
+		}
     }
 }

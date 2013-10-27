@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PassablePlatform : Activatable
+public class PassablePlatform : ActivatableBlock
 {
 	// Use this for initialization
 	void Start () {

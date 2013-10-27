@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlatformSmootherMover : Activatable {
+public class PlatformSmootherMover : ActivatableBlock
+{
 
     //public float blockspeed = 7;
     //public float waitTime = 2;

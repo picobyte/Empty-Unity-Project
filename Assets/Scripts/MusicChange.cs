@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class MusicChange : Activatable
-{
+{/*
     [RequireComponent (typeof (AudioSource))]
 	void OnTriggerEnter(Collider other) 
     {
@@ -10,5 +10,5 @@ public class MusicChange : Activatable
         {
            //TODO: play the right music file for each colour.
         }
-	}
+	}*/
 }

@@ -7,18 +7,14 @@ public abstract class Activatable : MonoBehaviour
 
 	[SerializeField]
     private ItemType neededItemType;
-    private Color originalColor;
     
-    protected void Awake()
+    protected virtual void Awake()
     {
         if(!listeners.ContainsKey(neededItemType))
         {
             listeners[neededItemType] = new HashSet<Activatable>();
         }
         listeners[neededItemType].Add(this);
-        
-        originalColor = renderer.material.color;
-        renderer.material.color = Color.black;
     }
     
     void OnDestroy()
@@ -35,10 +31,10 @@ public abstract class Activatable : MonoBehaviour
         }
     }
     
-    private void OnEvent(bool activate)
+    protected virtual void OnEvent(bool activate)
     {
-        renderer.material.color = activate ? originalColor : Color.black;
-        OnStatusChange(activate);
+        Debug.Log("Welt!");
+		OnStatusChange(activate);
     }
     
     protected virtual void OnStatusChange(bool active)

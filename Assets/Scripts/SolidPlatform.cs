@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SolidPlatform : Activatable 
+public class SolidPlatform : ActivatableBlock
 {
     // Use this for initialization
     void Start () {
