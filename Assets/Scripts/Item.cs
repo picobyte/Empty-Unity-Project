@@ -30,6 +30,8 @@ public class Item : MonoBehaviour
         {
 			pitem.OnReceiveItem(this);
 			isBound = true;
+            
+            MusicChange.ChangeMusic(type);
 		}
 	}
     
