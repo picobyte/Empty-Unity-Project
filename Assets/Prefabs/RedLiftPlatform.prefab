@@ -58,8 +58,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.03738308, y: .374708176, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 166.867035, y: 25.803421, z: 0}
+  m_LocalScale: {x: 1.42382312, y: 1.59322369, z: 1}
   m_Children:
   - {fileID: 400004}
   - {fileID: 400002}
@@ -71,8 +71,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .749538779, z: 0}
-  m_LocalScale: {x: 4.96000004, y: .75, z: 1.17478716}
+  m_LocalPosition: {x: 0, y: .905155838, z: 0}
+  m_LocalScale: {x: 4.96000004, y: .388425827, z: 1.17478716}
   m_Children: []
   m_Father: {fileID: 400000}
 --- !u!4 &400004
@@ -149,9 +149,9 @@ MonoBehaviour:
   neededItemType: 1
   inactiveMaterial: {fileID: 2100000, guid: ab6810831893cc94dafd0cf89f3e2075, type: 2}
   renderer: {fileID: 2300000}
-  blockspeed: 3
+  blockspeed: 10
   waitTime: 2
-  endPos: {x: -4.82000017, y: 8.48999977, z: 0}
+  endPos: {x: 215, y: 41, z: 0}
   playerOnIt: 0
 --- !u!114 &11400002
 MonoBehaviour:

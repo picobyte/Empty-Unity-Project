@@ -9,9 +9,10 @@ public class PlatformMover : ActivatableBlock
     public float blockspeed = 7;
     public float waitTime = 2;
     public Vector3 endPos;
+	public bool returnToStart = true;
     private Vector3 startPos;
 
-	public bool playerOnIt;
+	public bool playerOnIt = false;
 	
 	void Awake() 
 	{
@@ -19,12 +20,12 @@ public class PlatformMover : ActivatableBlock
         startPos = transform.position;
 	}
 	
-	// Update is called once per frame
 	void Update ()
     {
-        Vector3 targetPos = isActive && playerOnIt ? endPos : startPos;
-
-        transform.position = Vector3.MoveTowards(transform.position, targetPos, Time.deltaTime*blockspeed);
+		var targetPos = playerOnIt ? endPos : startPos;
+		
+		transform.position = Vector3.MoveTowards(
+			transform.position, targetPos, Time.deltaTime*blockspeed);
 	}
     
     void OnDrawGizmos()
