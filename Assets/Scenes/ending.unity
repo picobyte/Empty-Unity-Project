@@ -1012,7 +1012,7 @@ TextMesh:
   m_Font: {fileID: 12800000, guid: 6f326d2e550c9ce468857ed0b7b38bef, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 0
 --- !u!23 &815040429
 Renderer:
   m_ObjectHideFlags: 0
@@ -1519,7 +1519,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 10200000, guid: f4933a09340c4d947ba04dfe25a24218, type: 2}
       propertyPath: m_Color.rgba
-      value: 4278190080
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 10200000, guid: f4933a09340c4d947ba04dfe25a24218, type: 2}
       propertyPath: m_Anchor
