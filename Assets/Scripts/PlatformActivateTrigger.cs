@@ -10,10 +10,14 @@ public class PlatformActivateTrigger : MonoBehaviour
 	
 	void OnTriggerEnter(Collider other) 
 	{
+        if(!other.CompareTag("Player")) return;
+    
+        StopAllCoroutines();
+    
 		var mover = target.GetComponent<PlatformMover>();
 		if(mover && mover.isActive)
 		{
-			//Debug.Log("Ghost entered lift platform.");
+Debug.Log("Ghost entered lift platform.");
 			mover.playerOnIt = true;
 			if(holdPlayer)
             {
@@ -24,21 +28,37 @@ public class PlatformActivateTrigger : MonoBehaviour
 	
 	void OnTriggerExit(Collider other) 
 	{
-		Debug.Log("Ghost left lift platform.");
+        if(!other.CompareTag("Player")) return;
+    
+Debug.Log("Ghost left lift platform.");
 		var mover = target.GetComponent<PlatformMover>();
 		if(holdPlayer)
         {
 			if(mover)
             {
-				mover.playerOnIt = false;
-                player = null;
+                StartCoroutine(DetachPlayer());
 			}
 		}
 	}
     
+    IEnumerator DetachPlayer()
+    {
+print("start detaching");
+        yield return new WaitForFixedUpdate();
+        yield return new WaitForFixedUpdate();
+        if(player)
+        {
+print("detaching");
+            var mover = target.GetComponent<PlatformMover>();
+            mover.playerOnIt = false;
+            player = null;
+        }
+    }
+    
     private Vector3 previousPosition;
     void LateUpdate()
     {
+if(player) print("lateupdate");
         if(player) player.Translate(transform.position - previousPosition, Space.World);
         
         previousPosition = transform.position;

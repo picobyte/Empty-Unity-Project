@@ -29,7 +29,7 @@ public class MusicChange : MonoBehaviour
     
     private static Dictionary<ItemType, AudioClip> clips;
     
-    public static bool shouldPlay = true;
+    public bool shouldPlay = true;
     
     
     void Awake()
@@ -90,5 +90,10 @@ public class MusicChange : MonoBehaviour
             primary.volume = Mathf.Max(primary.volume - Time.deltaTime, 0);
             secondary.volume = Mathf.Max(secondary.volume - Time.deltaTime, 0);
         }
+    }
+    
+    public static void Finish()
+    {
+        instance.shouldPlay = false;
     }
 }

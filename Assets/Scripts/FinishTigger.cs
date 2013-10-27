@@ -24,7 +24,7 @@ public class FinishTigger : MonoBehaviour
             player = movement.transform;
             rainbow.GetComponent<LineRenderer>().enabled = true;
             
-            MusicChange.shouldPlay = false;
+            MusicChange.Finish();
         }
 	}
     
