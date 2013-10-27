@@ -128,6 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neededItemType: 1
+  inactiveMaterial: {fileID: 2100000, guid: ab6810831893cc94dafd0cf89f3e2075, type: 2}
   blockspeed: 3
   waitTime: 2
   endPos: {x: 120, y: -220, z: 0}
@@ -143,6 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 100000}
+  holdPlayer: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

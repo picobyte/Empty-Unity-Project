@@ -3,18 +3,20 @@ using System.Collections;
 
 public abstract class ActivatableBlock : Activatable
 {
-	private Color originalColor;
+	private Material originalMaterial;
+    [SerializeField]
+    private Material inactiveMaterial;
 
 	override protected void Awake()
 	{
 		base.Awake();
-		originalColor = renderer.material.color;
-		renderer.material.color = Color.black;
+		originalMaterial = renderer.sharedMaterial;
+		renderer.sharedMaterial = inactiveMaterial;
 	}
 	
 	override protected void OnEvent(bool activate)
 	{
-		renderer.material.color = activate ? originalColor : Color.black;
+		renderer.sharedMaterial = activate ? originalMaterial : inactiveMaterial;
 		base.OnEvent(activate);
 	}
 }
