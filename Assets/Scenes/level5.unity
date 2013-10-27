@@ -9502,7 +9502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2434cf4a6d9f20244bfde3a853122faf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 
+  nextLevel: level3
   fadeTexture: {fileID: 2800000, guid: 5236ef9e15fdedf4a8391a49b89b93d6, type: 3}
   rainbow: {fileID: 646138456}
 --- !u!65 &1032991712
@@ -12021,6 +12021,10 @@ Prefab:
     - target: {fileID: 12000000, guid: eb675aa62b8b4a94fb049b05ae0412a1, type: 2}
       propertyPath: m_Positions.Array.data[8].z
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: eb675aa62b8b4a94fb049b05ae0412a1, type: 2}
+      propertyPath: nextLevel
+      value: level3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb675aa62b8b4a94fb049b05ae0412a1, type: 2}

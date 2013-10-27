@@ -288,7 +288,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: eb675aa62b8b4a94fb049b05ae0412a1, type: 2}
       propertyPath: nextLevel
-      value: level5
+      value: level2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb675aa62b8b4a94fb049b05ae0412a1, type: 2}
@@ -8049,7 +8049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2434cf4a6d9f20244bfde3a853122faf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: level5
+  nextLevel: level2
   fadeTexture: {fileID: 2800000, guid: 5236ef9e15fdedf4a8391a49b89b93d6, type: 3}
   rainbow: {fileID: 823468360}
 --- !u!65 &1481463642
