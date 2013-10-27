@@ -4,10 +4,19 @@ ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Cylinder
+    100004: Finish
     400000: //RootNode
+    400002: Cylinder
+    400004: Finish
     2300000: //RootNode
+    2300002: Cylinder
+    2300004: Finish
     3300000: //RootNode
+    3300002: Cylinder
+    3300004: Finish
     4300000: Finish
+    4300002: Cylinder
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -42,7 +51,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 1
   importAnimation: 1
   copyAvatar: 0
