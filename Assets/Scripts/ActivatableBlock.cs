@@ -10,13 +10,18 @@ public abstract class ActivatableBlock : Activatable
 	override protected void Awake()
 	{
 		base.Awake();
-		originalMaterial = renderer.sharedMaterial;
-		renderer.sharedMaterial = inactiveMaterial;
+		originalMaterial = getRenderer().sharedMaterial;
+		getRenderer().sharedMaterial = inactiveMaterial;
 	}
 	
 	override protected void OnEvent(bool activate)
 	{
-		renderer.sharedMaterial = activate ? originalMaterial : inactiveMaterial;
+		getRenderer().sharedMaterial = activate ? originalMaterial : inactiveMaterial;
 		base.OnEvent(activate);
 	}
+    
+    protected virtual Renderer getRenderer()
+    {
+        return renderer;
+    }
 }
