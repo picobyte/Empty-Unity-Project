@@ -23,6 +23,8 @@ public class FinishTigger : MonoBehaviour
             movement.gravity = -1;
             player = movement.transform;
             rainbow.GetComponent<LineRenderer>().enabled = true;
+            
+            MusicChange.shouldPlay = false;
         }
 	}
     

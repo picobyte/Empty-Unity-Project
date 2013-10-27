@@ -29,6 +29,8 @@ public class MusicChange : MonoBehaviour
     
     private static Dictionary<ItemType, AudioClip> clips;
     
+    public static bool shouldPlay = true;
+    
     
     void Awake()
     {
@@ -71,14 +73,22 @@ public class MusicChange : MonoBehaviour
     
     void Update()
     {
-        if(primary.volume < 1)
+        if(shouldPlay)
         {
-            primary.volume = Mathf.Min(primary.volume + Time.deltaTime, 1);
-            secondary.volume = 1-primary.volume;
-            if(secondary.volume == 0)
+            if(primary.volume < 1)
             {
-                secondary.Stop();
+                primary.volume = Mathf.Min(primary.volume + Time.deltaTime, 1);
+                secondary.volume = 1-primary.volume;
+                if(secondary.volume == 0)
+                {
+                    secondary.Stop();
+                }
             }
+        }
+        else
+        {
+            primary.volume = Mathf.Max(primary.volume - Time.deltaTime, 0);
+            secondary.volume = Mathf.Max(secondary.volume - Time.deltaTime, 0);
         }
     }
 }
