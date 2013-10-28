@@ -11,6 +11,6 @@ public class ActivatableText : Activatable
 
 	protected override void OnStatusChange(bool active)
     {
-		renderer.enabled = true;
+		renderer.enabled = active;
     }
 }
