@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
-                _movement.y = -1;
+                _movement.y = -3;
                 maxAirSpeed = speed;
             }
         }
