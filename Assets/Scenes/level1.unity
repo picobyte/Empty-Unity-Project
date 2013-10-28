@@ -4529,7 +4529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2434cf4a6d9f20244bfde3a853122faf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: level4
+  nextLevel: level2
   fadeTexture: {fileID: 2800000, guid: 5236ef9e15fdedf4a8391a49b89b93d6, type: 3}
   rainbow: {fileID: 244793788}
 --- !u!65 &926477220
@@ -12949,7 +12949,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11400002, guid: eb675aa62b8b4a94fb049b05ae0412a1, type: 2}
       propertyPath: nextLevel
-      value: level4
+      value: level2
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: eb675aa62b8b4a94fb049b05ae0412a1, type: 2}
       propertyPath: m_LocalScale.x
