@@ -328,12 +328,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source1: {fileID: 261061666}
   source2: {fileID: 261061665}
-  defaultMusic: {fileID: 8300000, guid: c263fd060abf0d34da0646cb49abfc00, type: 3}
-  redMusic: {fileID: 8300000, guid: 2b9ef344330f5a84f9086c1276f4373a, type: 3}
-  greenMusic: {fileID: 8300000, guid: ae944f207d48ad140a59f270c6c8aeb3, type: 3}
-  purpleMusic: {fileID: 8300000, guid: 5570f044bc0a38947ad05dd36aa48c72, type: 3}
-  yellowMusic: {fileID: 8300000, guid: fc8a6834d45456545abcecdd96969f27, type: 3}
-  blueMusic: {fileID: 8300000, guid: 0a69cb0f3a0d5e84e94843c23ebb22d9, type: 3}
+  defaultMusic: {fileID: 8300000, guid: 5b2bcdc991f1eb34d892b64599d0561e, type: 3}
+  redMusic: {fileID: 8300000, guid: 8b29b30d4ed7e794a8b3b26cb543577b, type: 3}
+  greenMusic: {fileID: 8300000, guid: 391a335829f5ea14b9a3cf9d199244c9, type: 3}
+  purpleMusic: {fileID: 8300000, guid: b9165559fb2467f46b57d083a878cde8, type: 3}
+  yellowMusic: {fileID: 8300000, guid: e259a8155d7687e47b8dcc6fd64a06a4, type: 3}
+  blueMusic: {fileID: 8300000, guid: 02015732910477c448ce857eed3a5166, type: 3}
   shouldPlay: 1
 --- !u!1 &314965186
 GameObject:
@@ -3806,8 +3806,8 @@ Transform:
   m_PrefabInternal: {fileID: 1589596810}
   m_GameObject: {fileID: 1181701449}
   m_LocalRotation: {x: -3.09086232e-08, y: .707106829, z: -.707106829, w: -3.09086232e-08}
-  m_LocalPosition: {x: 0, y: 0, z: 50}
-  m_LocalScale: {x: 16, y: 1, z: 16}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
+  m_LocalScale: {x: 32, y: 2, z: 32}
   m_Children: []
   m_Father: {fileID: 1598941826}
 --- !u!114 &1181701451
@@ -4698,16 +4698,24 @@ Prefab:
       objectReference: {fileID: 2090156394}
     - target: {fileID: 400004, guid: 4595ea9396a887346ae5ce67f3e1a06e, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4595ea9396a887346ae5ce67f3e1a06e, type: 2}
       propertyPath: m_LocalScale.x
-      value: 16
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4595ea9396a887346ae5ce67f3e1a06e, type: 2}
       propertyPath: m_LocalScale.z
-      value: 16
+      value: 32
       objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 4595ea9396a887346ae5ce67f3e1a06e, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 4595ea9396a887346ae5ce67f3e1a06e, type: 2}
+      propertyPath: defaultMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 5b2bcdc991f1eb34d892b64599d0561e, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4595ea9396a887346ae5ce67f3e1a06e, type: 2}
   m_RootGameObject: {fileID: 1598941825}
